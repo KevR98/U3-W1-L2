@@ -8,7 +8,7 @@ import AllTheBooks from './components/AllTheBooks';
 function App() {
   return (
     <>
-      <div className='d-flex flex-column min-vh-100'>
+      <div className='d-flex flex-column vh-100'>
         <header>
           <MyNavbar />
         </header>
