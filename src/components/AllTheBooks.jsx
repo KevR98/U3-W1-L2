@@ -21,13 +21,17 @@ const AllTheBooks = () => {
           {AllBooks.map((book) => {
             return (
               <Col xs={12} md={6} lg={4} xl={3} className='g-2' key={book.asin}>
-                <Card>
+                <Card className='card'>
                   <Card.Img variant='top' src={book.img} />
-                  <Card.Body>
-                    <Card.Title>{book.title}</Card.Title>
-                    <Card.Text>Category: {book.category}</Card.Text>
-                    <Card.Text>Price: {book.price}</Card.Text>
-                    <Button variant='primary'>ACQUISTA</Button>
+                  <Card.Body className='card-body'>
+                    <div className='content'>
+                      <Card.Title>{book.title}</Card.Title>
+                      <Card.Text>Category: {book.category}</Card.Text>
+                      <Card.Text>Price: {book.price}</Card.Text>
+                    </div>
+                    <div>
+                      <Button variant='primary'>ACQUISTA</Button>
+                    </div>
                   </Card.Body>
                 </Card>
               </Col>
