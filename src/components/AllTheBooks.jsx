@@ -16,7 +16,7 @@ const AllBooks = [
 const AllTheBooks = () => {
   return (
     <>
-      <Container className='my-5'>
+      <Container className='my-2'>
         <Row>
           {AllBooks.map((book) => {
             return (

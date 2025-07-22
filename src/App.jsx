@@ -8,10 +8,18 @@ import AllTheBooks from './components/AllTheBooks';
 function App() {
   return (
     <>
-      <MyNavbar />
-      <Welcome />
-      <AllTheBooks />
-      <Footer />
+      <div className='d-flex flex-column min-vh-100'>
+        <header>
+          <MyNavbar />
+        </header>
+        <main className='flex-grow-1'>
+          <Welcome />
+          <AllTheBooks />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </>
   );
 }

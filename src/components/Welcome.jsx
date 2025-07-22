@@ -2,11 +2,10 @@ import { Container, Row, Alert } from 'react-bootstrap';
 
 const Welcome = () => {
   return (
-    <Container>
-      <Row xs={12} className='text-center'>
-        <Alert variant='success'>Benvenuto nella libreria EPIBOOK!</Alert>
-      </Row>
-    </Container>
+    <Row xs={12} className='text-center my-2'>
+      <Alert variant='success'>Benvenuto nella libreria EPIBOOK!</Alert>
+      <h1>Questa è una la libreria di EpiBook con i nostri BEST SELLERS!</h1>
+    </Row>
   );
 };
 
